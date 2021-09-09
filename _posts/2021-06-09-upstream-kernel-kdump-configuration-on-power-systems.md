@@ -1,5 +1,5 @@
 # Introduction:
-A step by step guide to configure KDUMP on Upstream kernel, unlike distro kernels uses of inbuilt kdump tools like kexec-tools and makedumpfile, Upstream kdump requires latest binaries to be built to support upstream kernels. The blog also talks about automated kdump test validation using openpower test framework and debug trace using crash tool
+A step by step guide to configure KDUMP on Upstream kernel, unlike distro kernels make use of inbuilt kdump tools such as kexec and makedumpfile, Upstream kdump requires latest binaries to be built to support upstream kernels. The blog also talks about automated kdump test validation using openpower test framework and debug trace using crash tool
 
 
 # Prerequisites
