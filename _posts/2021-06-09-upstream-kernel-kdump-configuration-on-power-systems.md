@@ -34,13 +34,29 @@ A step by step guide to configure KDUMP on Upstream kernel, unlike distro kernel
 
 # Build and install upstream kdump binaries
 
-* Upstream kernel requires upstream kdump binaries, lets build it
+Upstream kernel requires updated kdump binaries as distro provided makedumpfile fails to collect dump with upstream kernel.
+
+* Known issue with makedumpfile on upstream kernel
+    ```
+    The kernel version is not supported.
+    The makedumpfile operation may be incomplete.
+    check_release: Can't get the kernel version.
+    makedumpfile Failed.
+    Running makedumpfile --dump-dmesg /proc/vmcore failed (1).
+    ```
+* lets build and replace the distro provided makedumpfile and crash tools
+
   * makedumpfile
      ```bash
      git clone https://github.com/makedumpfile/makedumpfile.git
-     yum install bzip2-devel lzo lzo-devel snappy-devel 
+     yum install ncurses-devel zlib-devel bison bzip2-devel lzo lzo-devel snappy-devel 
      cd makedumpfile; make LINKTYPE=dynamic USELZO=on USESNAPPY=on ;make install
      ```
+  * crash
+    ```bash
+    git clone https://github.com/crash-utility/crash.git
+    cd crash; make USELZO=on USESNAPPY=on; make install
+    ```
   * kexec, vmcore-dmesg
      ```bash
      git clone https://git.kernel.org/pub/scm/utils/kernel/kexec/kexec-tools.git

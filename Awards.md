@@ -29,7 +29,7 @@ permalink: /Awards
 
 ![](https://github.com/abdhaleegit/abdhaleegit.github.io/raw/master/resource/Poster.jpg)
 
-# * Awarded “Best of 3 Innovative idea” at IBM zInnovate 2013 for Research on Analytics for Agriculture on Mainframe
+# * Awarded “Best of 3 Innovative idea” at IBM zInnovate 2013 for Research on Analytics for Agriculture with IBM Mainframe
 
 # * Awarded IBM Star of the Month Feburary 2013
 
