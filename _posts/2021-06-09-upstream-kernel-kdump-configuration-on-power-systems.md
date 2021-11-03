@@ -49,7 +49,7 @@ Upstream kernel requires updated kdump binaries as distro provided makedumpfile 
   * makedumpfile
      ```bash
      git clone https://github.com/makedumpfile/makedumpfile.git
-     yum install ncurses-devel zlib-devel bison bzip2-devel lzo lzo-devel snappy-devel 
+     yum install ncurses-devel zlib-devel bison bzip2-devel lzo lzo-devel snappy-devel elfutils-devel 
      cd makedumpfile; make LINKTYPE=dynamic USELZO=on USESNAPPY=on ;make install
      ```
   * crash
