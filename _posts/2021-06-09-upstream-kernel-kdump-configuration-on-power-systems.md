@@ -5,7 +5,7 @@ A step by step guide to configure KDUMP on Upstream kernel, unlike distro kernel
 # Prerequisites
 * Install RHEL8.x distribution on your PowerVM LPAR 
 * KDUMP configuration steps given below may differ for non Redhat OS
-    1. Reserve crash kernel memory example `crashkernel=1024M` in `/etc/default/kdump`
+    1. Reserve crash kernel memory example `crashkernel=1024M` in `/etc/default/grub`
     2. Update grub.cfg with command `grub2-mkconfig -o /boot/grub2/grub.cfg`
     3. Reboot the OS for the crash kernel settings to take an effect
     4. Run `dmesg | grep Res` or `cat /proc/cmdline` commands to verify the crashkernel memory reserverd
@@ -15,8 +15,9 @@ A step by step guide to configure KDUMP on Upstream kernel, unlike distro kernel
 # Compile and install upstream kernel
 
 * Download the latest upstream kernel source from [here](https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git) 
-* Copy the distro config from /boot and set the below kernel config options to retain debug symbol mappings in vmlinux
+* Copy the distro config from /boot and make sure below config options enabled  
 
+1. Enable debuginfo option to build kernel with debug symbols, as vmlinux enabled with debuginfo is required to analyze the vmcore dump file.
   ```
   CONFIG_DEBUG_INFO=y
   # CONFIG_DEBUG_INFO_REDUCED is not set
@@ -24,6 +25,25 @@ A step by step guide to configure KDUMP on Upstream kernel, unlike distro kernel
   # CONFIG_DEBUG_INFO_COMPRESSED is not set
   CONFIG_DEBUG_INFO_DWARF4=y
   ```
+  
+2. Enable "kexec system call" in "Processor type and features."
+   ```
+   CONFIG_KEXEC=y
+   ```
+3. Enable "sysfs file system support" in "Filesystem" -> "Pseudo filesystems." 
+   This is usually enabled by default.
+   ```
+   CONFIG_SYSFS=y
+   ```
+4. Enable "Build a kdump crash kernel" support under "Kernel" options:
+   ```
+   CONFIG_CRASH_DUMP=y
+   ```
+5. Enable "Build a relocatable kernel" support
+   ```
+   CONFIG_RELOCATABLE=y
+   ```
+
 * Linux Build and install
 
   ```bash
@@ -84,6 +104,19 @@ Dump analysis using crash utility requires vmcore and upstream vmlinux (enabled 
 ```
 crash /boot/vmlinuz-5.14.0-autotest /var/crash/vmcore
 ```
+
+known issue while crash analysis
+
+```bash
+'crash: compressed kdump: uncompress failed: no lzo compression support'
+fix this by running `make lzo; make install` from the crash source
+
+though CONFIG_DEBUG_INFO=y config was enabled
+'crash: /boot/vmlinuz-5.18.0-rc6 no debugging data available'
+make sure CONFIG_DEBUG_INFO_REDUCED is not set, else you might los debug data
+```
+
+* Refer to kdump documentation for more details [kdump](https://www.kernel.org/doc/Documentation/kdump/kdump.txt)
 
 # Automated upstream kernel install and kdump test run using op-test 
 OpenPower Test Framework provides automated test suite to install upstream kernel and run the kdump tests [op-test](https://github.com/open-power/op-test)

@@ -6,6 +6,8 @@ permalink: /Awards
 
 ## Recognition at IBM:
 
+# * Open Source Significant Contributor Award for the year 2021
+
 # * IBM Star of the month October 2021 for my value addition and influence on quality through Linux IO FVT upstream CI coverage on Power 10.
 
 # * Open Source Significant Contributor Award for the year 2020
