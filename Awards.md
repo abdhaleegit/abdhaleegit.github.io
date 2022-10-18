@@ -6,6 +6,10 @@ permalink: /Awards
 
 ## Recognition at IBM:
 
+# * ISDL Team Excellence Award for my contributions towards FVT test transformation & hardware optimization for year 2022
+
+![](https://github.com/abdhaleegit/abdhaleegit.github.io/raw/master/resource/Sep-2022.jpg)
+
 # * Open Source Significant Contributor Award for the year 2021
 
 # * IBM Star of the month October 2021 for my value addition and influence on quality through Linux IO FVT upstream CI coverage on Power 10.
