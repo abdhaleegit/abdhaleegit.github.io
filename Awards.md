@@ -6,6 +6,10 @@ permalink: /Awards
 
 ## Recognition at IBM:
 
+# * IBM Star of the Month Dec 2022 In recognition for effectively driving IO automation improvements.
+
+![](https://github.com/abdhaleegit/abdhaleegit.github.io/raw/master/resource/dec-2022.jpg)
+
 # * ISDL Team Excellence Award for my contributions towards FVT test transformation & hardware optimization for year 2022
 
 ![](https://github.com/abdhaleegit/abdhaleegit.github.io/raw/master/resource/Sep-2022.jpg)
@@ -16,7 +20,6 @@ permalink: /Awards
 
 # * Open Source Significant Contributor Award for the year 2020
 	
-
 # * IBM Star of the Month Dec 2019 for my contribution towards LPM automation and upstream CI enablement
 
 ![](https://github.com/abdhaleegit/abdhaleegit.github.io/raw/master/resource/dec-2019.jpg)

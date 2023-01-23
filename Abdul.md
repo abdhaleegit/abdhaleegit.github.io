@@ -15,7 +15,7 @@ Maintainer for opensource projects [Avocado Test](https://github.com/avocado-fra
 
 # Work Summary:
 * Design and Developed end to end automation CI Open Source framework using Python for Upstream Linux test on IBM Power systems [linuxci](https://github.com/linuxci/linuxci)
-* Design and Developed Automation framework for distribution OS installation on IBM PowerVM systems
+* Design and Developed Automation framework for distribution OS installation on IBM PowerVM systems [osinstall](https://github.com/lop-devops/LOPOsinstall)
 * Linux distribtuion test and automation on Power systems 
 * IBM Power KVM Linux test automation
 * Linux on Power IO driver test developement and automation
