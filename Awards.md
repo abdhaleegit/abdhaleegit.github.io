@@ -6,6 +6,8 @@ permalink: /Awards
 
 ## Recognition at IBM:
 
+# * Open Source Technical Collaboration Achievement Program Award for the year 2022
+
 # * IBM Star of the Month Dec 2022 In recognition for effectively driving IO automation improvements.
 
 ![](https://github.com/abdhaleegit/abdhaleegit.github.io/raw/master/resource/dec-2022.jpg)
