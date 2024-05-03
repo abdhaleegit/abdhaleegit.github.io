@@ -6,6 +6,8 @@ permalink: /Awards
 
 ## Recognition at IBM:
 
+# * TCAP Leader Award 2023 for my core contributions to upstream and driving force behind the Automation projects in LTC
+
 # * Open Source Technical Collaboration Achievement Program Award for the year 2022
 
 # * IBM Star of the Month Dec 2022 In recognition for effectively driving IO automation improvements.
