@@ -5,7 +5,7 @@ permalink: /Learning
 ---
 # Courses and Certifications
 
-![](https://github.com/abdhaleegit/abdhaleegit.github.io/raw/master/resource/Aibadge.png) IBM Watsonx Essentials July 2024
+![](https://github.com/abdhaleegit/abdhaleegit.github.io/raw/master/resource/Aibadge.jpg) IBM Watsonx Essentials July 2024
 
 Received from IBM for learning generative AI, watsonx AI use cases, IBM AI stratgeies to cater ethical and sustainable AI challenges
 
