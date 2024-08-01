@@ -8,6 +8,8 @@ permalink: /Awards
 
 # * TCAP Leader Award 2023 for my core contributions to upstream and driving force behind the Automation projects in LTC
 
+![](https://github.com/abdhaleegit/abdhaleegit.github.io/raw/master/resource/TCAPLeader.jpg)
+
 # * Open Source Technical Collaboration Achievement Program Award for the year 2022
 
 # * IBM Star of the Month Dec 2022 In recognition for effectively driving IO automation improvements.
