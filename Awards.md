@@ -6,9 +6,13 @@ permalink: /Awards
 
 ## Recognition at IBM:
 
-# * TCAP Leader Award 2023 for my core contributions to upstream and driving force behind the Automation projects in LTC
+# * TCAP Leader Award 2024 for my core contributions to upstream and driving force behind the Automation projects in LTC
 
 ![](https://github.com/abdhaleegit/abdhaleegit.github.io/raw/master/resource/TCAPLeader.jpg)
+
+# * Recognised in Sangam Open house 2024 from Akthar for my contributions in driving Gitbisect Automation for End to End CI
+
+![](https://github.com/abdhaleegit/abdhaleegit.github.io/raw/master/resource/sangam-gb.jpg)
 
 # * Open Source Technical Collaboration Achievement Program Award for the year 2022
 
